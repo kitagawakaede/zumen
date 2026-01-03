@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
   experimental: {
     serverComponentsExternalPackages: [
       "@azure/ai-form-recognizer",
-      "@azure/storage-blob",
       "@google/generative-ai",
-      "canvas",
-      "pdfjs-dist"
+      "sharp"
     ]
   }
 };
